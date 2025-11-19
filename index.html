@@ -40,10 +40,15 @@
       line-height:1.45;
       padding:40px 20px;
       display:flex;
+	  flex-direction: column;
+   	  min-height: 100vh;
       justify-content:center;
     }
     .wrap{
       width:100%;
+		flex: 1; /* take remaining space */
+    display: flex;
+    flex-direction: column;
       max-width:var(--max-w);
     }
 
