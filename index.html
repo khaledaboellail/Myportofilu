@@ -11,24 +11,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-:root {
-  --bg: #f8fafc;
-  --card: #ffffff;
-  --muted: #64748b;
-  --accent: #f1641e; /* Etsy orange vibe */
-  --radius: 12px;
-  --shadow: 0 6px 18px rgba(0,0,0,0.08);
-  --glass: rgba(255,255,255,0.05);
-  --max-w: 1200px;
-  --transition: 0.3s ease; 
-} 
-    * { box-sizing: border-box; } 
+    :root {
+      --bg: #0f1724;
+      --card: rgba(15,23,36,0.75);
+      --muted: #94a3b8;
+      --accent: #06b6d4;
+      --accent2: #7c3aed;
+      --glass: rgba(255,255,255,0.05);
+      --radius: 16px;
+      --max-w: 1200px;
+      --shadow: 0 10px 30px rgba(0,0,0,0.5);
+      --transition: 0.3s ease;
+    }
+
+    * { box-sizing: border-box; }
+
     html, body {
       height: 100%;
       margin: 0;
-      font-family:'Inter',system-ui, sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(180deg, #061024 0%, #071427 60%);
+      color: #e6eef6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       line-height: 1.6;
@@ -199,12 +202,10 @@
     }
 
     .project-card {
-      background: white;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      padding: 16px;
+      background: var(--card);
       backdrop-filter: blur(12px);
+      border-radius: var(--radius);
+      padding: 16px;
       border: 1px solid rgba(255,255,255,0.05);
       box-shadow: var(--shadow);
       display: flex;
@@ -266,16 +267,6 @@
       background: var(--accent);
       border-color: var(--accent);
       color: #021324;
-    }
-    .chip-static {
-    pointer-events: none;      /* يمنع أي تفاعل */
-    cursor: default;           /* سهم عادي */
-    background: transparent;   /* شكل بسيط */
-    border: none;
-    padding: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--muted);
     }
 
     /* About & Contact */
@@ -397,7 +388,7 @@
           <h3 class="project-title">Gym lovers</h3>
           <p class="project-desc">It is a design for gym lovers who likes to went to gym and spend all long time at it</p>
           <div class="project-links">
-            <span class="chip-static">RedBubble</span>
+            <span class="chip">RedBubble</span>
             <a class="chip" href="https://www.redbubble.com/shop/ap/176497682" target="_blank">Preview</a>
           </div>
         </article>
@@ -410,7 +401,7 @@
           <h3 class="project-title">Coffe lovers</h3>
           <p class="project-desc">It is amazing design for coffe lovers</p>
           <div class="project-links">
-            <span class="chip-static">RedBubble</span>
+            <span class="chip">RedBubble</span>
             <a class="chip" href="https://www.redbubble.com/shop/ap/176527228" target="_blank">Preview</a>
           </div>
         </article>
@@ -422,7 +413,7 @@
           <h3 class="project-title">Pizza lover</h3>
           <p class="project-desc">It is amazing design for pizza lovers</p>
           <div class="project-links">
-            <span class="chip-static">RedBubble</span>
+            <span class="chip">RedBubble</span>
             <a class="chip" href="https://www.redbubble.com/shop/ap/176527328" target="_blank">Preview</a>
           </div>
         </article>
@@ -434,7 +425,7 @@
           <h3 class="project-title">Cat Lovers</h3>
           <p class="project-desc">It is amazing design for Cat lovers</p>
           <div class="project-links">
-            <span class="chip-static">RedBubble</span>
+            <span class="chip">RedBubble</span>
             <a class="chip" href="https://www.redbubble.com/shop/ap/176527465" target="_blank">Preview</a>
           </div>
         </article>
@@ -445,7 +436,7 @@
           <h3 class="project-title">Wolf lover</h3>
           <p class="project-desc">It is amazing design for Wolf lovers</p>
           <div class="project-links">
-            <span class="chip-static">RedBubble</span>
+            <span class="chip">RedBubble</span>
             <a class="chip" href="https://www.redbubble.com/shop/ap/176527608" target="_blank">Preview</a>
           </div>
         </article>
@@ -469,7 +460,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0G4K3HWGB" target="_blank" rel="noopener noreferrer">Preview</a>
           </div>
         </article>
@@ -485,7 +476,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0G4L9PV6Y" target="_blank" rel="noopener noreferrer">Preview</a>
           </div>
         </article>
@@ -501,7 +492,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0G4MB7H1S" target="_blank" rel="noopener noreferrer">Preview</a>
           </div>
         </article>
@@ -517,7 +508,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0G516TG2F" target="_blank" rel="noopener noreferrer">Preview</a>
           </div>
         </article>
@@ -533,7 +524,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0FXXGW8Y8" target="_blank" rel="noopener noreferrer">Preview</a>
           </div>
         </article>
@@ -552,7 +543,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0FXMTWZ22" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:var(--muted)">Preview</a>
           </div>
         </article>
@@ -572,7 +563,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0G2HZFJJP" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:var(--muted)">Preview</a>
           </div>
         </article>
@@ -588,7 +579,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0G1947KB4" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:var(--muted)">Preview</a>
           </div>
         </article>
@@ -604,7 +595,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0FZS1TRF3" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:var(--muted)">Preview</a>
           </div>
         </article>
@@ -623,7 +614,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0FYQWWDS4" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:var(--muted)">Preview</a>
           </div>
         </article>
@@ -639,7 +630,7 @@
           </div>
 
           <div class="project-links">
-            <span class="chip-static">KDP</span>
+            <span class="chip">KDP</span>
             <a class="chip" href="https://www.amazon.com/dp/B0FXWQC9LC" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:var(--muted)">Preview</a>
           </div>
         </article>
