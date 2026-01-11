@@ -304,6 +304,18 @@
   overflow-y: auto;  /* يضيف scroll لو المحتوى طويل */
   box-sizing: border-box;
 }
+    /* للموبايل */
+@media (max-width: 640px) {
+  .modal {
+    align-items: flex-start; /* تبدأ من الأعلى بدل المنتصف */
+    padding-top: 40px; /* مسافة من الأعلى */
+    padding-bottom: 40px; /* مسافة من الأسفل */
+  }
+
+  .modal-box {
+    max-height: calc(100vh - 80px); /* ناخد كل الشاشة مع المسافات */
+  }
+}
 
   .countries {
     display: grid;
