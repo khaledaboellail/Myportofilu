@@ -278,16 +278,15 @@
       border-color: var(--accent);
       color: #021324;
     }
-     /* MODAL */
-  .modal {
+   .modal {
   position: fixed;
   inset: 0;
   background: rgba(0,0,0,0.6);
   display: none;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* عمودي */
+  justify-content: center; /* أفقي */
   z-index: 1000;
-  padding: 20px; /* مساحة من الحواف */
+  padding: 0 20px; /* مسافة جانبية */
 }
 
 .modal.active {
@@ -300,20 +299,22 @@
   border-radius: 20px;
   width: 90%;
   max-width: 400px;
-  max-height: 90vh;  /* ارتفاع أقصى 90% من الشاشة */
-  overflow-y: auto;  /* يضيف scroll لو المحتوى طويل */
+  max-height: 90vh;  /* أقصى ارتفاع */
+  overflow-y: auto;  /* scroll لو طويل */
   box-sizing: border-box;
 }
-    /* للموبايل */
+
+/* موبايل */
 @media (max-width: 640px) {
   .modal {
-    align-items: flex-start; /* تبدأ من الأعلى بدل المنتصف */
-    padding-top: 40px; /* مسافة من الأعلى */
+    align-items: flex-start; /* يبقى من فوق */
+    justify-content: center;
+    padding-top: 40px;   /* مسافة من الأعلى */
     padding-bottom: 40px; /* مسافة من الأسفل */
   }
 
   .modal-box {
-    max-height: calc(100vh - 80px); /* ناخد كل الشاشة مع المسافات */
+    max-height: calc(100vh - 80px); /* يأخذ كل الشاشة مع المسافات */
   }
 }
 
