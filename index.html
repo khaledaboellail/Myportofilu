@@ -280,38 +280,30 @@
     }
      /* MODAL */
   .modal {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-
-  .modal.active {
-    display: flex;
-  }
-
-  .modal-box {
-    background: #111827;
-    padding: 24px;
-    border-radius: 20px;
-    width: 320px;
-    max-width: 90%;
-    @media (max-width: 640px) {
-  .modal-box {
-    width: 95%;       /* تقريبًا 95% من شاشة الموبايل */
-    padding: 20px;
-  }
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px; /* مساحة من الحواف */
 }
-  }
 
-  .modal-box h3 {
-    margin-top: 0;
-    margin-bottom: 16px;
-    text-align: center;
-  }
+.modal.active {
+  display: flex;
+}
+
+.modal-box {
+  background: #111827;
+  padding: 24px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90vh;  /* ارتفاع أقصى 90% من الشاشة */
+  overflow-y: auto;  /* يضيف scroll لو المحتوى طويل */
+  box-sizing: border-box;
+}
 
   .countries {
     display: grid;
