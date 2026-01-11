@@ -268,7 +268,19 @@
       border-color: var(--accent);
       color: #021324;
     }
-
+    .store-select {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .store-select option {
+      color: #000;
+    }
     /* About & Contact */
     #about h2, #contact h2 {
       font-size: 24px;
@@ -447,6 +459,37 @@
       <h2>Books & NoteBooks</h2>
 
       <div class="grid">
+        <article class="project-card">
+        <a class="thumb" href="#">
+          <img src="https://m.media-amazon.com/images/I/71UyujqnhyL._SL1499_.jpg" alt="Book cover">
+        </a>
+
+        <h3 class="project-title">Word Search Puzzle Book</h3>
+        <p class="project-desc">
+          5000 Word Search Puzzles for Adults & Teens – 126 puzzles.
+        </p>
+
+        <div class="project-links">
+          <span class="chip">KDP</span>
+
+          <select class="store-select" onchange="goToStore(this)">
+            <option value="">Choose store</option>
+            <option value="https://www.amazon.com/dp/B0GBVGHSG5">🇺🇸 US</option>
+            <option value="https://www.amazon.co.uk/dp/B0GBVGHSG5">🇬🇧 UK</option>
+            <option value="https://www.amazon.de/dp/B0GBVGHSG5">🇩🇪 DE</option>
+            <option value="https://www.amazon.fr/dp/B0GBVGHSG5">🇫🇷 FR</option>
+            <option value="https://www.amazon.es/dp/B0GBVGHSG5">🇪🇸 ES</option>
+            <option value="https://www.amazon.it/dp/B0GBVGHSG5">🇮🇹 IT</option>
+            <option value="https://www.amazon.nl/dp/B0GBVGHSG5">🇳🇱 NL</option>
+            <option value="https://www.amazon.pl/dp/B0GBVGHSG5">🇵🇱 PL</option>
+            <option value="https://www.amazon.se/dp/B0GBVGHSG5">🇸🇪 SE</option>
+            <option value="https://www.amazon.ie/dp/B0GBVGHSG5">🇮🇪 IE</option>
+            <option value="https://www.amazon.co.jp/dp/B0GBVGHSG5">🇯🇵 JP</option>
+            <option value="https://www.amazon.ca/dp/B0GBVGHSG5">🇨🇦 CA</option>
+            <option value="https://www.amazon.com.au/dp/B0GBVGHSG5">🇦🇺 AU</option>   
+          </select>
+        </div>
+      </article>
         <article class="project-card">
           <a class="thumb" href="https://www.amazon.com/dp/B0GBVGHSG5" target="_blank" rel="noopener noreferrer">
             <img src="https://m.media-amazon.com/images/I/71UyujqnhyL._SL1499_.jpg" alt="Notebook design 1">
