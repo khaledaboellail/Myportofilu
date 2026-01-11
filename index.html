@@ -283,14 +283,13 @@
   inset: 0;
   background: rgba(0,0,0,0.6);
   display: none;
-  align-items: center; /* عمودي */
-  justify-content: center; /* أفقي */
   z-index: 1000;
-  padding: 0 20px; /* مسافة جانبية */
+  overflow-y: auto; /* scroll لو المحتوى طويل */
+  padding: 20px 10px; /* مسافة جانبية وعليا */
 }
 
 .modal.active {
-  display: flex;
+  display: block;
 }
 
 .modal-box {
@@ -299,22 +298,15 @@
   border-radius: 20px;
   width: 90%;
   max-width: 400px;
-  max-height: 90vh;  /* أقصى ارتفاع */
-  overflow-y: auto;  /* scroll لو طويل */
+  margin: 0 auto; /* يتمركز أفقيًا */
   box-sizing: border-box;
 }
 
 /* موبايل */
 @media (max-width: 640px) {
-  .modal {
-    align-items: flex-start; /* يبقى من فوق */
-    justify-content: center;
-    padding-top: 40px;   /* مسافة من الأعلى */
-    padding-bottom: 40px; /* مسافة من الأسفل */
-  }
-
   .modal-box {
-    max-height: calc(100vh - 80px); /* يأخذ كل الشاشة مع المسافات */
+    max-height: none;  /* يلغي أي ارتفاع محدود */
+    min-height: 100px; /* ارتفاع أدنى */
   }
 }
 
