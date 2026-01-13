@@ -185,17 +185,18 @@
     }
 
     /* Portfolio */
-    #portfolio, #notebooks {
+    #portfolio, #notebooks ,#books {
       margin-bottom: 36px;
     }
     
-    #portfolio h2, #notebooks h2 {
+    #portfolio h2, #notebooks h2 ,#books h2{
       font-size: 24px;
       margin-bottom: 16px;
     }
     
     #portfolio .grid,
-    #notebooks .grid {
+    #notebooks .grid,
+    #books .grid{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -419,7 +420,8 @@
       </div>
 
       <nav>
-        <a href="#notebooks">Books&Notebook</a>
+        <a href="#books">Books</a>
+        <a href="#notebooks">Notebooks</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -434,7 +436,7 @@
         </p>
 
         <div class="cta">
-          <a class="btn btn-primary" href="#portfolio">See my work</a>
+          <a class="btn btn-primary" href="#books">See my work</a>
           <a class="btn btn-ghost" href="#contact">Contact me</a>
         </div>
       </div>
@@ -510,10 +512,8 @@
     </div>
           </section>
     -->
-
-    <section id="notebooks">
-      <h2>Books & NoteBooks</h2>
-
+<section id="books">
+      <h2>Books</h2>
       <div class="grid">
         <article class="project-card">
   <a class="thumb" onclick="openStoreModal(this)"
@@ -553,6 +553,15 @@
        data-asin="B0GCWVW4J7">Preview</a>
   </div>
 </article>
+        
+      </div>
+</section>      
+
+    
+    <section id="notebooks">
+      <h2>NoteBooks</h2>
+      <div class="grid">    
+        
 
 <article class="project-card">
   <a class="thumb" onclick="openStoreModal(this)" data-asin="B0G4K3HWGB">
